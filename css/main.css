@@ -334,7 +334,7 @@ body,html {
 	width: 102px;
 }
 .emptyHistory:after{
-	content: "全部删除";
+	content: "Clear";
 	white-space: pre;
 	font-size: 12px;
 	font-weight: bold;
