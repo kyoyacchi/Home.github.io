@@ -833,7 +833,7 @@ require(['jquery'], function ($) {
 		});
 
 		// HTML添加到APP
-		$('#app').append(html + tabHtml + '<span class="active-span"></span></ul><div class="choice-swipe"><ul class="swiper-wrapper"><div style="position:absolute;text-align:center;top:50%;width:100%;margin-top:-64px;color:#444">正在加载页面中...</div></ul></div><div class="bottom-close"></div></div></div>');
+		$('#app').append(html + tabHtml + '<span class="active-span"></span></ul><div class="choice-swipe"><ul class="swiper-wrapper"><div style="position:absolute;text-align:center;top:50%;width:100%;margin-top:-64px;color:#444">Loading page...</div></ul></div><div class="bottom-close"></div></div></div>');
 
 		setTimeout(function () {
 			$(".page-bg").addClass("animation");
@@ -1078,18 +1078,18 @@ require(['jquery'], function ($) {
 				console.log(store.get('bookMark'));
 				oInput.select();
 				document.execCommand("Copy");
-				alert('已复制到剪贴板，请粘贴保存文件。');
+				alert('Copied to clipboard, please paste to save file.');
 				oInput.remove();
 			} else if (value === "import") {
-				var data = prompt("在这粘贴主页数据");
+				var data = prompt("Paste homepage data here.");
 				try {
 					data = JSON.parse(data);
 					store.set("bookMark", data.bookMark);
 					store.set("setData", data.setData);
-					alert("导入成功!");
+					alert("Import successful!");
 					location.reload();
 				} catch (e) {
-					alert("导入失败!");
+					alert("Import failed!");
 				}
 			} else if (evt.target.className !== 'set-select' && $this.find('.set-select').length > 0) {
 				$.fn.openSelect = function () {
@@ -1114,7 +1114,7 @@ require(['jquery'], function ($) {
 				item = dom.parent().data("value"),
 				value = dom.val();
 			if (item === "engines" && value === "diy") {
-				var engines = prompt("输入搜索引擎网址，（用“%s”代替搜索字词）");
+				var engines = prompt("Enter a search engine URL, (replace search query with '%s'");
 				console.log(engines);
 				if (engines) {
 					settings.set('diyEngines', engines);
