@@ -982,7 +982,7 @@ require(['jquery'], function ($) {
 		})
 	}
 
-	$(".logo").click(() => {
+	$(".search-from").click(() => {
 		var browser = browserInfo();
 		if (browser === 'via') {
 			location.href = "folder://";
@@ -990,8 +990,8 @@ require(['jquery'], function ($) {
 			location.href = "x:bm?sort=default";
 		}
 	}).longPress(() => {
-		var data = [{ "title": "搜索引擎", "type": "select", "value": "engines", "data": [{ "t": "夸克搜索", "v": "quark" }, { "t": "跟随Via浏览器", "v": "via" }, { "t": "百度搜索", "v": "baidu" }, { "t": "谷歌搜索", "v": "google" }, { "t": "必应搜索", "v": "bing" }, { "t": "神马搜索", "v": "sm" }, { "t": "好搜搜索", "v": "haosou" }, { "t": "搜狗搜索", "v": "sogou" }, { "t": "自定义", "v": "diy" }] }, { "title": "设置壁纸", "value": "wallpaper" }, { "title": "设置LOGO", "value": "logo" }, { "title": "恢复默认壁纸和LOGO", "value": "delLogo" }, { "title": "图标颜色", "type": "select", "value": "bookcolor", "data": [{ "t": "深色图标", "v": "black" }, { "t": "浅色图标", "v": "white" }] }, { "title": "主页样式细圆", "type": "checkbox", "value": "styleThin" }, { "title": "夜间模式", "type": "checkbox", "value": "nightMode" }, { "title": "记录搜索历史", "type": "checkbox", "value": "searchHistory" }, { "type": "hr" }, { "title": "导出主页数据", "value": "export" }, { "title": "导入主页数据", "value": "import" }, { "type": "hr" }, { "title": "Github", "value": "openurl", "description": "https://github.com/liumingye/quarkHomePage" }, { "title": "关于", "description": "当前版本：" + app.version }];
-		var html = '<div class="page-settings"><div class="set-header"><div class="set-back"></div><p class="set-logo">主页设置</p></div><ul class="set-option-from">';
+		var data = [{ "title": "Search engine", "type": "select", "value": "engines", "data": [{ "t": "Quark", "v": "quark" }, { "t": "Via", "v": "via" }, { "t": "Baidu", "v": "baidu" }, { "t": "Google", "v": "google" }, { "t": "Bing", "v": "bing" }, { "t": "Shenma", "v": "sm" }, { "t": "Haosou", "v": "haosou" }, { "t": "Sogou", "v": "sogou" }, { "t": "Diy", "v": "diy" }] }, { "title": "Set wallpaper", "value": "wallpaper" }, { "title": "Set logo", "value": "logo" }, { "title": "Restore default wallpaper and LOGO", "value": "delLogo" }, { "title": "Icon color", "type": "select", "value": "bookcolor", "data": [{ "t": "Dark", "v": "black" }, { "t": "Light", "v": "white" }] }, { "title": "Homepage style thin circle", "type": "checkbox", "value": "styleThin" }, { "title": "Night mode", "type": "checkbox", "value": "nightMode" }, { "title": "Save search history", "type": "checkbox", "value": "searchHistory" }, { "type": "hr" }, { "title": "Export homepage data", "value": "export" }, { "title": "Import homepage data", "value": "import" }, { "type": "hr" }, { "title": "Github", "value": "openurl", "description": "https://github.com/kyoyacchi/Home.github.io/" }, { "title": "About", "description": "current version：" + app.version }];
+		var html = '<div class="page-settings"><div class="set-header"><div class="set-back"></div><p class="set-logo">Homepage settings</p></div><ul class="set-option-from">';
 		for (var json of data) {
 			if (json.type === 'hr') {
 				html += `<li class="set-hr"></li>`;
