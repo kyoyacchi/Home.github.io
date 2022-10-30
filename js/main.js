@@ -746,7 +746,7 @@ require(['jquery'], function ($) {
 
 	$(".search-btn").click(function () {
 		var text = $(".search-input").val();
-		if ($(".search-btn").text() === "进入") {
+		if ($(".search-btn").text() === "Enter") {
 			!text.match(/^(ht|f)tp(s?):\/\//) && (text = "http://" + text);
 			history.go(-1);
 			setTimeout(function () {
