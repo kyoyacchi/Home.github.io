@@ -99,10 +99,18 @@ body,html {
 	padding-top: 84px;
 }
 .logo {
-
+	text-align: center;
+	margin: 0 auto;
+	max-width: 32%;
+	min-height: 104px;
+	max-height: 150px;
+	margin-bottom: 20px;
+	background-position: center;
+	background-size: cover;
+	transition: opacity .3s;
 }
 .logo img {
-	
+	width: 100%;
 }
 .ornament-input-group, .anitInput {
 	border: 2px solid var(--dark);
