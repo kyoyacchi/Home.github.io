@@ -628,7 +628,7 @@ require(['jquery'], function ($) {
 				anitInput.remove();
 				// 搜索页内容初始化
 				$(".suggestion").html("");
-				$(".search-btn").html("取消");
+				$(".search-btn").html("Cancel");
 				$(".shortcut1").show();
 				$(".shortcut2,.shortcut3,.empty-input").hide();
 				$(".search-input").val('');
@@ -654,13 +654,13 @@ require(['jquery'], function ($) {
 		if (!wd) {
 			$(".history").show();
 			$(".empty-input").hide();
-			$(".search-btn").html("取消");
+			$(".search-btn").html("Cancel");
 			$(".shortcut1").show();
 			$(".suggestion").hide().html('');
 		} else {
 			$(".history").hide();
 			$(".empty-input").show();
-			$(".search-btn").html(/^\b(((https?|ftp):\/\/)?[-a-z0-9]+(\.[-a-z0-9]+)*\.(?:com|net|org|int|edu|gov|mil|arpa|asia|biz|info|name|pro|coop|aero|museum|[a-z][a-z]|((25[0-5])|(2[0-4]\d)|(1\d\d)|([1-9]\d)|\d))\b(\/[-a-z0-9_:\@&?=+,.!\/~%\$]*)?)$/i.test(wd) ? "进入" : "搜索");
+			$(".search-btn").html(/^\b(((https?|ftp):\/\/)?[-a-z0-9]+(\.[-a-z0-9]+)*\.(?:com|net|org|int|edu|gov|mil|arpa|asia|biz|info|name|pro|coop|aero|museum|[a-z][a-z]|((25[0-5])|(2[0-4]\d)|(1\d\d)|([1-9]\d)|\d))\b(\/[-a-z0-9_:\@&?=+,.!\/~%\$]*)?)$/i.test(wd) ? "Enter" : "Search");
 			var has_char = escape(wd).indexOf("%u");
 			has_char < 0 ? $(".shortcut2").show() : $(".shortcut3").show();
 			$.ajax({
