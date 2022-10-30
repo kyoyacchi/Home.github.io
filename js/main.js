@@ -207,7 +207,7 @@ require(['jquery'], function ($) {
 	var bookMarkFn = function (ele, options) {
 		this.$ele = $(ele);
 		this.options = {
-			data: [{ "name": "精选", "url": "choice()", "icon": "icon/discover.png" }, { "name": "微博", "url": "https://weibo.com", "icon": "icon/weibo.png" }, { "name": "TürkAnime TV", "url": "https://www.turkanime.co/", "icon": "icon/turkanime64.png" }, { "name": "知乎", "url": "https://www.zhihu.com", "icon": "icon/zhihu.png" }, { "name": "淘宝", "url": "https://m.taobao.com", "icon": "icon/taobao.png" }, { "name": "贴吧", "url": "https://tieba.baidu.com", "icon": "icon/tieba.png" }, { "name": "IT之家", "url": "https://m.ithome.com", "icon": "icon/ithome.png" }, { "name": "网易", "url": "https://3g.163.com", "icon": "icon/netease.png" }, { "name": "热榜", "url": "https://tophub.today", "icon": "icon/tophub.png" }, { "name": "导航", "url": "https://www.pp93.com/m", "icon": "icon/pp93.png" }],
+			data: [{ "name": "精选", "url": "choice()", "icon": "icon/discover.png" }, { "name": "微博", "url": "https://weibo.com", "icon": "icon/weibo.png" }, { "name": "TürkAnime TV", "url": "https://www.turkanime.co/", "icon": "icon/bilibilibog.png" }, { "name": "知乎", "url": "https://www.zhihu.com", "icon": "icon/zhihu.png" }, { "name": "淘宝", "url": "https://m.taobao.com", "icon": "icon/taobao.png" }, { "name": "贴吧", "url": "https://tieba.baidu.com", "icon": "icon/tieba.png" }, { "name": "IT之家", "url": "https://m.ithome.com", "icon": "icon/ithome.png" }, { "name": "网易", "url": "https://3g.163.com", "icon": "icon/netease.png" }, { "name": "热榜", "url": "https://tophub.today", "icon": "icon/tophub.png" }, { "name": "导航", "url": "https://www.pp93.com/m", "icon": "icon/pp93.png" }],
 		};
 		this.options = $.extend({}, this.options, options);
 		this.init();
@@ -294,10 +294,10 @@ require(['jquery'], function ($) {
 							</ul>
 							<div class="addbook-content">
 								<div class="addbook-sites">
-								<input type="text" class="addbook-input addbook-url" placeholder="Enter URL" value="https://" />
-								<input type="text" class="addbook-input addbook-name" placeholder="Enter website name" />
-									<div id="addbook-upload">Click the select icon</div>
-									<div class="addbook-ok">Confirm add</div>
+								<input type="text" class="addbook-input addbook-url" placeholder="Enter the URL" value="https://" />
+								<input type="text" class="addbook-input addbook-name" placeholder="Enter the name of website" />
+									<div id="addbook-upload">Click to select the icon</div>
+									<div class="addbook-ok">Confirm adding</div>
 								</div>
 								<div class="bottom-close"></div>
 							</div>
