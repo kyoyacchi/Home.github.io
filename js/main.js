@@ -189,7 +189,7 @@ require(['jquery'], function ($) {
 				}
 			},
 			error: function () {
-				callback.error && callback.error('请求失败！');
+				callback.error && callback.error('Request failed！');
 			},
 			complete: function () {
 				callback.complete && callback.complete();
@@ -294,10 +294,10 @@ require(['jquery'], function ($) {
 							</ul>
 							<div class="addbook-content">
 								<div class="addbook-sites">
-								<input type="text" class="addbook-input addbook-url" placeholder="输入网址" value="http://" />
-								<input type="text" class="addbook-input addbook-name" placeholder="输入网站名" />
-									<div id="addbook-upload">点击选择图标</div>
-									<div class="addbook-ok">确认添加</div>
+								<input type="text" class="addbook-input addbook-url" placeholder="Enter URL" value="https://" />
+								<input type="text" class="addbook-input addbook-name" placeholder="Enter website name" />
+									<div id="addbook-upload">Click the select icon</div>
+									<div class="addbook-ok">Confirm add</div>
 								</div>
 								<div class="bottom-close"></div>
 							</div>
