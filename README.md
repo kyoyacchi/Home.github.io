@@ -13,3 +13,6 @@ Re-adjust default shortcuts.
 • Make an settings button at right bottom corner.
 
 • Multi-language support.
+
+### How to open settings?
+— Click to the search widget longpress search button then settings will appear.
