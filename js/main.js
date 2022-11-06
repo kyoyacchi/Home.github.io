@@ -1078,7 +1078,7 @@ require(['jquery'], function ($) {
 				console.log(store.get('bookMark'));
 				oInput.select();
 				document.execCommand("Copy");
-				alert('Copied to clipboard, please paste to save file.');
+				alert('Copied to clipboard, please paste it to somewhere to not lose it.');
 				oInput.remove();
 			} else if (value === "import") {
 				var data = prompt("Paste homepage data here.");
