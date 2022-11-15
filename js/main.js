@@ -1023,15 +1023,16 @@ require(['jquery'], function ($) {
 		if (browser !== 'via') { // 只有VIA浏览器才能显示
 			$('option[value=via]').hide();
 		}
+		/*
 function setDefaultWallP () {
-  let wp = "https://i.ibb.co/DM2gHfp/Screenshot-20221031-134015.jpg"
+  let wp = ""
   var reader = new FileReader();
   
   settings.set("wallpaper",this.result)
   console.log("Wallpaper set success.")
   reader.readAsDataURL(wp)
 }
-setDefaultWallP();
+setDefaultWallP();*/
 //////
 		$(".set-option .set-select").map(function () {
 			$(this).val(settings.get($(this).parent().data('value')));
