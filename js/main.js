@@ -1024,8 +1024,12 @@ require(['jquery'], function ($) {
 			$('option[value=via]').hide();
 		}
 function setDefaultWallP () {
-  settings.set("wallpaper","https://i.ibb.co/DM2gHfp/Screenshot-20221031-134015.jpg")
+  let wp = "https://i.ibb.co/DM2gHfp/Screenshot-20221031-134015.jpg"
+  var reader = new FileReader();
+  
+  settings.set("wallpaper",this.result)
   console.log("Wallpaper set success.")
+  reader.readAsDataURL(wp)
 }
 setDefaultWallP();
 //////
