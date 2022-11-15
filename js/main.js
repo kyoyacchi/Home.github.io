@@ -288,8 +288,8 @@ require(['jquery'], function ($) {
 						<div class="page-addbook">
 							<ul class="addbook-choice">
 								<li class="current">站点</li>
-								<!-- <li>书签</li>
-								<li>历史</li> -->
+								<!-- <li>Yer imi</li>
+								<li>Tarih</li> -->
 								<span class="active-span"></span>
 							</ul>
 							<div class="addbook-content">
@@ -424,7 +424,7 @@ require(['jquery'], function ($) {
 		},
 		add: function (name, url, icon) {
 			var data = this.options.data;
-			url = url.match(/:\/\//) ? url : "http://" + url;
+			url = url.match(/:\/\//) ? url : "https://" + url;
 			var i = data.length - 1;
 			var dom = $('<div class="list" data-url="' + url + '"><div class="img" style="background-image:url(' + icon + ')"></div><div class="text">' + name + '</div></div>');
 			this.$ele.append(dom);
