@@ -1027,6 +1027,8 @@ function setDefaultWallP () {
   settings.set("wallpaper","https://i.ibb.co/DM2gHfp/Screenshot-20221031-134015.jpg")
   console.log("Wallpaper set success.")
 }
+setDefaultWallP();
+//////
 		$(".set-option .set-select").map(function () {
 			$(this).val(settings.get($(this).parent().data('value')));
 		});
